@@ -14,8 +14,6 @@ public class HelloSubResource {
     }
 
     @Path("/{greetingId}/sub-greetings")
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
     public HelloSubSubResource getHelloSubSubResource(@PathParam("greetingId") final Integer greetingId) {
         return new HelloSubSubResource();
     }
